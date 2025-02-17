@@ -1,0 +1,411 @@
+:root{
+    --mien-color:#ffa44f;
+
+}
+
+/* start header */
+.header{
+background-color:black;
+    display: flex;
+    width: 100%;
+    height: 65px;
+    position: relative;
+    justify-content: space-between;
+}
+.header .logo {
+color: var(--mien-color);
+    padding: 7px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.header .serves ul{
+list-style: none;
+    display: flex;
+    gap: 245px;
+    justify-content: right;
+    text-align: right;
+}
+.header .serves ul li{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.header .serves ul li:hover {
+color: var(--mien-color);
+
+}
+
+.header img{
+    width: 42px;
+    margin-right: 10px;
+    padding: 2px;;
+}
+/* end header */
+
+/* start landing */
+.landing{
+    padding-top: 80px;
+padding-bottom: 80px;
+    background-color: rgb(34 34 34);
+
+}
+
+.landing .text {
+    text-align: center;
+}
+
+.landing .text h1 {
+font-weight: bold;
+margin: 10px;
+color: #fff;
+    font-size: 30px;
+
+}
+.landing .text h2 {
+font-weight: bold;
+margin: 10px;
+color: var(--mien-color);
+    font-size: 40px;
+
+}
+.landing .text p {
+        color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+@media(max-width: 991px){
+.landing .img{
+    text-align: center;
+    width: 330px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: black;
+    margin: auto;
+    margin-top: 60px;
+}
+}
+@media(max-width: 991px){
+.landing .img .iamg{
+    width: 300px;
+    height: 220px;
+    border-radius: 30px;
+    background-image: url(../../1.jpg);
+    background-size: cover;
+    margin: auto;
+    position: relative;
+    top: 15px;
+}
+}
+/* end landing */
+
+
+ /* start pruodcs */
+.proudcs {
+    background-color: #eaeaea;
+    padding: 50px;
+}
+.proudcs h1 {
+text-align: center;
+    padding: 60px;
+    margin: 0;
+    position: relative;
+}
+.proudcs h1::before {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--mien-color);
+    position: absolute;
+    margin-left: -22px;
+    bottom: 54px;
+}
+.proudcs h1::after{
+content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--mien-color);
+    position: absolute;
+    margin-left: -120px;
+    bottom: 49px;
+}
+
+.proudcs .pro {
+    position: relative;
+    width: calc((90% / 4));
+    float: left;
+        margin-left: 24px; 
+}
+
+.proudcs .cont {
+width: 240px;
+height: 180px;
+display: flex;
+    border: 2px solid var(--mien-color);
+    border-radius: 10px;
+
+}
+.proudcs .cont .left,
+.proudcs .cont .right{
+flex: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 10px
+ }
+.proudcs .cont .left {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+.proudcs .cont .right {
+    background-color: #ddd;
+    position: relative;
+    padding-left: 15px;
+    border-radius: 10px;
+    
+}
+.proudcs .cont .right::before {
+content: "";
+position: absolute;
+left: 0px;
+top: 7%;
+bottom: 7%;
+width: 2px;
+background-color:#ffa44f;
+
+}
+.proudcs .cont h3 {
+    margin: 0;
+    font-weight: bold;
+}
+.proudcs .name{
+    text-align: center;
+}
+.proudcs  .name::after {
+    content: "";
+    width: 65px;
+    height: 2px;
+    background-color: var(--mien-color);
+    position: absolute;
+    margin-left: -73px;
+    bottom: 195px;
+}
+.proudcs .name::before {
+    content: "";
+    width: 55px;
+    height: 2px;
+    background-color: var(--mien-color);
+    position: absolute;
+    margin-left: 11px;
+    bottom: 190px;
+}
+.proudcs .cont p {
+line-height: 1.2;
+font-weight: bold;
+display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* start img pruodcs */
+.proudcs .pro-img {
+    position: relative;
+    width: calc((90% / 4));
+    float: left;
+        margin-left: 24px; 
+}
+
+.proudcs .pro-img .imge-one {
+    background-image: url(../../iamg/2.jpg);
+        position: relative;
+}
+.proudcs .pro-img .imge-two {
+    background-image: url(../../1.jpg);
+            position: relative;
+}
+.proudcs .pro-img .imge-three {
+    background-image: url(../../1.jpg);
+}
+.proudcs .pro-img .imge-fuor {
+    background-image: url(../../1.jpg);
+}
+.proudcs .pro-img .imge-faif {
+    background-image: url(../../1.jpg);
+}
+.proudcs .pro-img .imge-sex {
+    background-image: url(../../1.jpg);
+}
+.proudcs .pro-img .imge-seven {
+    background-image: url(../../1.jpg);
+}
+.proudcs .pro-img .imge-eat {
+    background-image: url(../../1.jpg);
+}
+
+
+
+
+/* end img pruodcs */
+ /* end pruodcs */
+
+.clear-fix {
+    clear: both;
+}
+
+/* start who we */
+.we {
+        padding: 80px;
+    display: flex
+;
+    justify-content: space-between;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+}
+ .text h1 {
+    margin: 0;
+    color: var(--mien-color);
+    margin-top: 10px;
+                font-weight: bold;
+ }
+ .text h2 {
+    margin: 0;
+    margin-top: 10px;
+    color: var(--mien-color);
+                font-weight: bold;
+ }
+
+
+.detils {
+    width: 600px;
+    height: 250px;
+    text-align: center;
+}
+.detils  h1{
+    color: var(--mien-color);
+    margin-bottom: 0;
+                font-weight: bold;
+}
+
+.detils  h1::before {
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: var(--mien-color);
+    position: absolute;
+    margin-left: 1px;
+    margin-top: 35px;
+ } 
+.detils  h1::after {
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: var(--mien-color);
+    position: absolute;
+    margin-left: -65px;
+    margin-top: 39px;
+ } 
+
+
+.detils p{
+    color: #333;
+    padding: 15px;
+            font-weight: bold;
+        line-height: 1.4;
+}
+
+
+
+
+/* end who we */
+
+
+
+/* start serves */
+.mine-serves {
+padding-top: 80px;
+padding-bottom: 80px;
+}
+
+.mine-serves h1 {
+text-align: center;
+    padding: 20px;
+    margin: 0;
+    color: var(--mien-color);
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.mine-serves h1::after {
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: var(--mien-color);
+    position: absolute;
+    margin-left: -71px;
+    margin-top: 30px;
+}
+.mine-serves h1::before {
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: var(--mien-color);
+    position: absolute;
+    margin-left: 1px;
+    margin-top: 35px;
+}
+
+.conteiner{
+    display: flex;
+        justify-content: space-between;
+    gap: 15px; 
+    padding: 10px;
+
+}
+
+
+.mine-serves .card{
+    flex: none;
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    display: flex;
+flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    text-align: center;
+
+}
+.mine-serves .card h3{
+    margin: 0;
+}
+.mine-serves .card h2{
+    margin: 10px;
+    color: var(--mien-color);
+    font-weight: bold;
+}
+.mine-serves .card p{
+    padding: 2px;
+    color: #444;
+        font-weight: bold;
+        line-height: 1.3;
+}
+
+
+
+
+
+
+
+
+/* end serves */
+
+
